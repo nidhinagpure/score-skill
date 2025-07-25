@@ -1,7 +1,24 @@
 
+import { Routes, Route } from "react-router";
+ 
+// File import here
+import Home from "./pages/Home";
+
+
+// Components import here 
+import Navbar from "./components/Navbar";
+
+
 const App = () => {
   return (
-    <div className="text-9xl font-bold underline text-blue-900 bg-red-600">App hjidjjdjdhhh</div>
+    <div>
+     <Navbar/>
+     <Routes>
+        <Route path="/" element={<Home/>}/>
+     </Routes>
+   
+    </div>
+    
   )
 }
 
