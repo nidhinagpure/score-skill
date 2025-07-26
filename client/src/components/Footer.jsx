@@ -59,8 +59,6 @@ const Footer = () => {
                 </div>
             </div>
             <p className='text-center'>© 2025 ScoreSkill. All rights reserved.</p>
-
-
         </div>
     )
 }

@@ -1,3 +1,4 @@
+import React from 'react'
 
 const Courses = () => {
   return (
@@ -5,4 +6,4 @@ const Courses = () => {
   )
 }
 
-export default Courses
+export default Courses;
