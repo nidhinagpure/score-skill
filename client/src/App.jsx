@@ -14,6 +14,7 @@ import Myprofile from "./pages/Myprofile";
 
 // Components import here 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/Login"element={<Login/>} />
         <Route path="/myprofile"element={<Myprofile/>} />
       </Routes>
+      <Footer />
 
     </div>
 
