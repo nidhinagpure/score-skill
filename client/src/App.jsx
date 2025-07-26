@@ -29,8 +29,6 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/Login"element={<Login/>} />
         <Route path="/myprofile"element={<Myprofile/>} />
-
-
       </Routes>
 
     </div>

@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div className=''>
-      <div className='flex text-xl text-bold pl-16 p-4 bg-gray-100 w-full font-bold fixed t-0 l-0 b-0 r-0 border-b-2 border-gray-400 shadow-lg'>
+      <div className='flex text-xl text-bold pl-16 p-4 bg-gray-100 w-full font-bold fixed t-0 l-0 b-0 r-0 border-b-2 border-gray-400 shadow-lg  z-10'>
         <p>💻SCORESKILL</p>
         <div>
           <ul className='flex pl-70 cursor-pointer'>
