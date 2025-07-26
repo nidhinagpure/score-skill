@@ -8,11 +8,11 @@ import { NavLink } from 'react-router';
 
 const Footer = () => {
     return (
-        <div className='bg-gray-200 py-4 mt-10'>
+        <div className='bg-gray-200 py-4 mt-10 sm:flex-row gap-4'>
             <div className='flex justify-around mt-2 pb-10'>
 
                 <div className='flex flex-col'>
-                    <p className='font-bold text-lg hover:text-gray-500'>SCRORESKILL</p>
+                    <p className='font-bold text-lg hover:text-gray-500 sm:text-md'>SCRORESKILL</p>
                     <img className='w-30 pt-4' src={main_img} alt='' />
                 </div>
                 <div className='flex flex-col'>

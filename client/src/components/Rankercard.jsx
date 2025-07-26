@@ -51,7 +51,7 @@ const Rankercard = () => {
                     </div>
                 })}
             </div>
-            <div className="w-190 m-auto mt-16 text-xl">
+            <div className="md:w-190 m-auto text-sm mt-16 text-xl sm:text-md">
                 <p>Every expert was once a beginner. Keep pushing your limits, ask questions, and never stop learning. Your dedication today builds the future you dream of. Stay focused, stay curious — you’re capable of achieving great things!👍</p>
             </div>
         </div>
