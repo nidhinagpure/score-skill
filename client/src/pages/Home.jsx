@@ -1,8 +1,11 @@
-import React from 'react'
+import Herosec from "./../components/Herosec";
+
 
 const Home = () => {
   return (
-    <div></div>
+    <div className="min-h-screen">
+      <Herosec/>
+    </div>
   )
 }
 
