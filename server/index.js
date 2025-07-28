@@ -18,12 +18,14 @@ if (conUrl) {
 }
 };
 
-const courses = []; // temp empty array //
 
-app.get("/courses", (req, res) => {
+app.get("/courses", async (req, res) => {
+
+    const couread = await Courses.find();
+
     return res.status(200).json({
         success: true,
-        data: courses,
+        data:  couread,
         message: "courses fetch successfully",
     });
 });
