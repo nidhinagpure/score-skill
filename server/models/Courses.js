@@ -7,4 +7,7 @@ const CoursesModel = new Schema({
 
 const Courses = model("Courses", CoursesModel );
 
+
+
+
 export default Courses;
