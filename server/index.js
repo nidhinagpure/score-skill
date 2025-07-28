@@ -4,13 +4,11 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
 
-import Courses from "./models/Courses";
+import Courses from "./models/Courses.js";
 
 const app = express();
 app.use(express.json());
 app.use(cors());
-
-
 
 const connectionDB = async () => {
     const conUrl = await mongoose.connect(process.env.MongoDbUrl);
@@ -18,9 +16,7 @@ const connectionDB = async () => {
 if (conUrl) {
     console.log("MongoDB Connected successfully");
 }
-
 };
-
 
 const courses = []; // temp empty array //
 
@@ -36,21 +32,19 @@ app.get("/courses", (req, res) => {
 app.post("/courses", async (req, res) => {
     const { title, info } = req.body;
  
-    const newCourses = new Courses({
+    const newCourses = new Courses({ // the data is come from courses.js file //
         title,
         info
     });
 
-    const saveCourses = await newCourses.save();
+    const saveCourses = await newCourses.save(); // save the data 
 
     return res.status(200).json({
         success: true,
-        data: saveCourses,
+        data: saveCourses, // return save data
         message: "courses fetch successfully",
     });
 });
-
-
 
 app.get("/health", (req, res) => {
     res.status(200).json({ message: "Server is running" });
