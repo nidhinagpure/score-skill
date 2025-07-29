@@ -1,4 +1,4 @@
-import Courses from "./../models/Courses.js";
+/*import Courses from "./../models/Courses.js";
 
 const get_Courses = async (req, res) => {
 
@@ -29,4 +29,4 @@ const get_Courses = async (req, res) => {
 };
 
 
-export { get_Courses, post_Courses }
+export { get_Courses, post_Courses } */

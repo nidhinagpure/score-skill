@@ -1,13 +1,12 @@
 import { Schema, model } from "mongoose";
 
-const CoursesModel = new Schema({
+const CourseSchema = new Schema({
     title:String,
     info:String,
-});
+    click:String,
+}); // schema stucture //
 
-const Courses = model("Courses", CoursesModel );
+const Courses = model ("Courses", CourseSchema );
+// model 
 
-
-
-
-export default Courses;
+export default Courses;  
