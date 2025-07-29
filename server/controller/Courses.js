@@ -29,7 +29,54 @@ const postCourses = async (req, res) => {
     });
 };
 
-export { getCourses, postCourses }
+
+const readIdCourse = async (req, res) => {
+    const { id } = req.params;
+    
+    try{
+
+    
+    // const coursesDelete = await Courses.findOne({_id:id}); first way to find by id
+    const coursesReadID = await Courses.findById(id);
+
+    return res.status(200).status(200).json({
+        success:true,
+        data:coursesReadID,
+        message:"Courses show successfully",
+    });
+
+} catch(e) {
+    return res.status(400).json({
+        success:false,
+        message:e.message,
+        data:null
+    });
+};
+};
+
+const deleteCourses = async (req, res)=> {
+    const { id } = req.params;
+    
+    try{
+
+    const coursesReadID = await Courses.findByIdAndDelete(id)
+
+    return res.status(200).status(200).json({
+        success:true,
+        data:coursesReadID,
+        message:"Courses delete successfully",
+    });
+
+} catch(e) {
+    return res.status(400).json({
+        success:false,
+        message:e.message,
+        data:null
+    });
+};
+};
+
+export { getCourses, postCourses, readIdCourse, deleteCourses}
 
 
 

@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
-import {getCourses, postCourses} from "./controller/Courses.js";
+import {getCourses, postCourses, readIdCourse, deleteCourses} from "./controller/Courses.js";
 import dotenv from "dotenv";
 dotenv.config(); // envarement vairiables access
 
@@ -60,6 +60,11 @@ app.post("/courses", postCourses);
         message:"Courses added successfully",
     });
 } move to c*/
+
+
+app.get("/courses/:id",readIdCourse );
+
+app.delete("/courses/:id", deleteCourses);
 
 
  app.get("/health",(req, res) => {
