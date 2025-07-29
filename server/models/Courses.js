@@ -7,6 +7,6 @@ const CourseSchema = new Schema({
 }); // schema stucture //
 
 const Courses = model ("Courses", CourseSchema );
-// model 
+// model name is Courses 
 
 export default Courses;  

@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
-import Courses from "./models/Courses.js";
+import {getCourses, postCourses} from "./controller/Courses.js";
 import dotenv from "dotenv";
 dotenv.config(); // envarement vairiables access
 
@@ -21,7 +21,9 @@ const ConnectedDB = async () => { // connection on backend to database
 
 
 
-app.get("/courses", async (req, res) => { // To read the data 
+app.get("/courses", getCourses);
+
+    /*async (req, res) => { // To read the data 
 
     const CoursesRead = await Courses.find();
 
@@ -30,10 +32,10 @@ app.get("/courses", async (req, res) => { // To read the data
         data:CoursesRead,
         message:"Data fetch successfully"
     });
-});
+}*/
 
-
-app.post("/courses", async (req, res) => {
+app.post("/courses", postCourses);
+    /*async (req, res) => {
     const { title, info, click } = req.body; // Read the data from req.body //
 
     const newCourses = new Courses({
@@ -42,7 +44,7 @@ app.post("/courses", async (req, res) => {
         click,
     });
 
-    const saveCourses = await newCourses.save();
+    const saveCourses = await newCourses.save();*/
      
     /*const newCourses = {
         title,
@@ -52,12 +54,12 @@ app.post("/courses", async (req, res) => {
     
     SUB_COURSES.push(newCourses); // push the object to empty array */
 
-    return res.status(201).json({
+   /* return res.status(201).json({
         success:true,
         data: saveCourses,
         message:"Courses added successfully",
     });
-});
+} move to c*/
 
 
  app.get("/health",(req, res) => {
