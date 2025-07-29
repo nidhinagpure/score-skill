@@ -23,7 +23,7 @@ const Herosec = () => {
                         <button className=" font-bold shadow shadow-gray-500 drop-shadow-lg w-35 bg-blue-200 hover:bg-blue-300 text-sm px-6 py-2 rounded transition duration-200 ease-in-out">
                             Login
                         </button>
-                        <button className=" font-bold shadow shadow-gray-500 drop-shadow-lg w-35 bg-blue-200 hover:bg-blue-300 text-sm px-6 py-2 rounded transition duration-200 ease-in-out">
+                        <button className="font-bold shadow shadow-gray-500 drop-shadow-lg w-35 bg-blue-200 hover:bg-blue-300 text-sm px-6 py-2 rounded transition duration-200 ease-in-out">
                             Add Details
                         </button>
                     </div>

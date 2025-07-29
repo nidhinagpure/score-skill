@@ -31,12 +31,12 @@ const Navbar = () => {
               <li className='pl-10 font-bold hover:text-gray-400 hover:underline'>Dashboard</li>
             </NavLink>
 
-            <NavLink to="/about">
-              <li className='pl-10 font-bold hover:text-gray-400 hover:underline '>About</li>
-            </NavLink>
-            
             <NavLink to="/doudt">
               <li className='pl-10 font-bold hover:text-gray-400 hover:underline'>Doudt</li>
+            </NavLink>
+            
+            <NavLink to="/feedback">
+              <li className='pl-10 font-bold hover:text-gray-400 hover:underline'>Feedback</li>
             </NavLink>
           </ul>
         </div>

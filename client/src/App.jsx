@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router";
 
 // File import here
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Courses from "./pages/Courses";
 import Doudt from "./pages/Doudt";
 import Dashboard from "./pages/Dashboard";
@@ -15,6 +14,7 @@ import Myprofile from "./pages/Myprofile";
 // Components import here 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Feedback from "./pages/Feedback";
 
 
 const App = () => {
@@ -25,7 +25,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/feedback" element={<Feedback />} />
         <Route path="/doudt" element={<Doudt/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Login"element={<Login/>} />

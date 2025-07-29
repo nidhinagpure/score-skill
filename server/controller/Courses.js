@@ -12,7 +12,7 @@ const getCourses = async (req, res) => { // To read the data
 };
 
 const postCourses = async (req, res) => {
-    const { title, info, click } = req.body; // Read the data from req.body //
+    const { title, info, click} = req.body; // Read the data from req.body //
 
     const newCourses = new Courses({
         title,
